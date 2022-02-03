@@ -21,7 +21,7 @@
   font-size: 22px;
   font-weight: 400;
 }
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 556px) {
   .footer__h2 {
     text-align: center;
   }
@@ -75,9 +75,22 @@
 .footer__redes-sociais {
   position: relative;
 }
+@media screen and (max-width: 991px) {
+  .footer__redes-sociais {
+    left: -20px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .footer__redes-sociais {
+    left: 0px;
+  }
+}
 .footer__icones {
   bottom: -30px;
   left: 75px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 25%;
 }
 @media screen and (max-width: 767px) {
   .footer__icones {
@@ -110,12 +123,6 @@
 .footer__icones-img {
   width: 30px;
   height: 30px;
-  margin-right: 24px;
-}
-@media screen and (max-width: 767px) {
-  .footer__icones-img {
-    margin-right: 5px;
-  }
 }
 @media screen and (max-width: 710px) {
   .footer__icones-img {

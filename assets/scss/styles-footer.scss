@@ -21,7 +21,7 @@
         font-size: 22px;
         font-weight: 400;
 
-        @media screen and (max-width: 539px) {
+        @media screen and (max-width: 556px) {
             text-align: center;
         }
     }
@@ -80,11 +80,22 @@
 
     &__redes-sociais {
         position: relative;
+
+        @media screen and (max-width: 991px) {
+            left: -20px;
+        }
+
+        @media screen and (max-width: 580px) {
+            left: 0px;
+        }
     }
 
     &__icones {
         bottom: -30px;
         left: 75px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 25%;
 
         @media screen and (max-width: 767px) {
             position: absolute;
@@ -115,10 +126,10 @@
     &__icones-img {
         width: 30px;
         height: 30px;
-        margin-right: 24px;
+        //margin-right: 24px;
 
         @media screen and (max-width: 767px) {
-            margin-right: 5px;
+            //margin-right: 5px;
         }
 
         @media screen and (max-width: 710px) {
