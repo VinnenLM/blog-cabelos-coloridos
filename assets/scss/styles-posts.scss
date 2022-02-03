@@ -55,10 +55,17 @@ body {
     &__post {
         background-color: white;
         border: 1px solid rgba(128, 128, 128, 0.589);
+        border-radius: 10px;
+        transition: .5s;
+
+        &:hover {
+            box-shadow: 3px 3px 20px rgba(128, 0, 128, 0.4);
+        }
     }
 
     &__img {
         width: 100%;
+        border-radius: 10px 10px 0 0;
 
         @media screen and (max-width: 876px) {
             height: 30%;
@@ -246,6 +253,7 @@ body {
             appearance: none;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
+            background-color: white;
         }
     }
 
@@ -312,6 +320,7 @@ body {
         text-decoration: none !important;
         &:hover {
             color: rgba(128, 0, 128, 0.6);
+            text-decoration: underline !important;
         }
     }
 }
