@@ -230,8 +230,7 @@ body {
     color: black;
     text-decoration: none !important; }
     .main a:hover {
-      color: rgba(128, 0, 128, 0.6);
-      text-decoration: underline !important; }
+      color: rgba(128, 0, 128, 0.6); }
 
 .lista__lupa {
   display: inherit; }

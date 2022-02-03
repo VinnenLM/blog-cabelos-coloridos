@@ -139,9 +139,9 @@
     font-size: 15px; }
   .footer__copyright-h3 a {
     text-decoration: none !important;
-    color: grey !important; }
+    color: white !important; }
     .footer__copyright-h3 a:hover {
-      text-decoration: underline !important; }
+      color: grey !important; }
 
 .btn-dark {
   border-color: white !important; }
