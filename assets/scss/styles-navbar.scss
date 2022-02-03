@@ -1,0 +1,129 @@
+$main-bg: #757978;
+$nav-color: black;
+$nav-bg-active: rgba(0, 0, 0, 0.6);
+$screen-bg: #d2527f;
+$duration: 300ms;
+$ease: ease-in-out;
+
+.nav {
+    & &__menu {
+        display: flex;
+        transform: translateX(-100%);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__menu {
+        position: absolute;
+        z-index: 100;
+        opacity: 0;
+        transition-duration: $duration;
+        align-items: center;
+
+        &__link {
+            opacity: 0;
+            transition-delay: 500ms;
+        }
+
+        &--active &__link {
+            opacity: 1;
+        }
+
+        &__icon {
+            display: inline-block;
+            width: 30px;
+            height: 4px;
+            background-color: $nav-color;
+            transition-property: background-color, transform;
+            transition-duration: $duration;
+
+            &:before,
+            &:after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 4px;
+                position: absolute;
+                background: $nav-color;
+                transition-property: margin, transform;
+                transition-duration: $duration;
+            }
+
+            &:before {
+                margin-top: -8px;
+            }
+
+            &:after {
+                margin-top: 8px;
+            }
+        }
+
+        &__list {
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & li:nth-child(n + 3) {
+                width: 80%;
+                border-bottom: 1px solid white;
+                text-align: center;
+                padding-top: 20px;
+            }
+        }
+
+        &__item i {
+            display: flex;
+            justify-content: center;
+            font-size: 35px;
+        }
+
+        &__link {
+            font-size: 1em;
+            text-decoration: none;
+            color: white;
+            opacity: 1;
+            transition: opacity 300ms $ease;
+            padding-top: 15px;
+            letter-spacing: 2px;
+        }
+
+        &__trigger {
+            display: block;
+            width: 30px;
+            height: 25px;
+        }
+    }
+
+    &__menu--active &__menu {
+        transition: all $duration $ease;
+        transform: translateX(0);
+    }
+
+    &__menu--active &__menu__trigger {
+        opacity: 0.5;
+    }
+
+    &__menu--active &__menu {
+        opacity: 1;
+        background-color: $nav-bg-active;
+    }
+
+    &__menu--active &__menu__icon {
+        background: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 14px;
+        right: 0;
+
+        &:before {
+            margin-top: 0;
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            margin-top: 0;
+            transform: rotate(-45deg);
+        }
+    }
+}

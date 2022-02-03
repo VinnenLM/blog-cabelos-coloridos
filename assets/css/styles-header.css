@@ -1,0 +1,109 @@
+.header__border {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 4px 0;
+  margin-top: 5px;
+}
+@media screen and (max-width: 575px) {
+  .header__border {
+    margin-top: 0;
+    align-items: center;
+    background-color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+}
+.header__menu {
+  border-top: 1.5px solid #d67cd6;
+  border-bottom: 1.5px solid #d67cd6;
+}
+.header__menu-ativo {
+  border-top: rgba(214, 124, 214, 0.5);
+  border-bottom: rgba(214, 124, 214, 0.5);
+}
+.header__menu__lista {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 13px;
+  margin: 0 auto;
+  width: 50%;
+  color: grey;
+}
+@media screen and (max-width: 767px) {
+  .header__menu__lista {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 575px) {
+  .header__menu__lista {
+    display: none;
+  }
+}
+.header__menu__lista__links a {
+  color: rgba(128, 128, 128, 0.609);
+  transition: 0.7s;
+  text-decoration: none !important;
+}
+.header__menu__lista__links a:hover {
+  color: black !important;
+}
+@media screen and (max-width: 575px) {
+  .header__menu__mobile {
+    padding-bottom: 7px;
+  }
+}
+.header__menu__nav {
+  background-color: white;
+  display: none;
+  transition: 0.2s;
+}
+.header__menu__nav-ativo {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 575px) {
+  .header__menu__nav {
+    display: flex;
+    padding-left: 60px;
+  }
+}
+.header__menu__botao {
+  display: flex;
+  outline: none !important;
+}
+.header__menu__login {
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #ffd000;
+}
+.header__banner {
+  width: 100vw;
+  height: 140px;
+  background-position: center;
+  background-image: url(../img/banner.webp);
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 575px) {
+  .header__banner {
+    background-position: top;
+    margin-top: 40px;
+  }
+}
+
+.material-icons {
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #ffd000;
+}
+
+.nav-ativo {
+  position: relative;
+  transition: 0.2s;
+}
+
+/*# sourceMappingURL=styles-header.css.map */

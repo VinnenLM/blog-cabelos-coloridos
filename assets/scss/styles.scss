@@ -1,0 +1,204 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.main {
+    background-image: url(../img/background-padrão.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+
+    .container:first-child {
+        max-width: 900px;
+        padding-top: 20px;
+
+        @media screen and (max-width: 876px) {
+            max-width: 670px;
+        }
+    }
+
+    &__content {
+        padding: 20px 20px;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+    }
+
+    &__post {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 876px) {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        width: 90%;
+
+        @media screen and (max-width: 876px) {
+            width: 100%;
+        }
+    }
+
+    &__texto {
+        width: 100%;
+        margin-right: 50px;
+        max-width: 350px;
+
+        @media screen and (max-width: 876px) {
+            max-width: 100%;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        @media screen and (max-width: 300px) {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+
+    &__date {
+        padding-top: 25px;
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
+
+    &__title {
+        text-decoration: none;
+        font-size: 25px;
+        color: grey;
+        text-decoration: none !important;
+
+        @media screen and (max-width: 348px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 300px) {
+            font-size: 15px;
+        }
+
+        &:hover {
+            color: rgba(128, 0, 128, 0.6);
+        }
+    }
+
+    &__description {
+        padding: 20px 0 25px;
+        font-size: 15px;
+
+        @media screen and (max-width: 348px) {
+            font-size: 13px;
+        }
+
+        @media screen and (max-width: 300px) {
+            font-size: 12px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        margin: 20px auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media screen and (max-width: 650px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__email {
+        position: relative;
+    }
+
+    &__icone {
+        position: absolute;
+        left: 850px;
+        bottom: 200px;
+
+        @media screen and (max-width: 1199px) {
+            left: 750px;
+        }
+
+        @media screen and (max-width: 991px) {
+            left: 640px;
+        }
+
+        @media screen and (max-width: 767px) {
+            left: 510px;
+        }
+
+        @media screen and (max-width: 650px) {
+            position: initial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__email-icone {
+        width: 50px;
+        height: 50px;
+    }
+
+    &__button {
+        &__posts {
+            background-color: rgba(0,0,0,.85);
+            color: white;
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            transition: .6s;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(190, 190, 190);
+                color: rgba(0,0,0,.85);
+            }
+        }
+    }
+}
+
+#pagina-atual {
+    color: black !important;
+}
+
+.input-label {
+    margin-bottom: 2px;
+}
+
+.botao-feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-inner {
+    border-radius: 5%;
+}
+
+.container {
+    @media screen and (max-width: 575px) {
+        width: 80% !important;
+    }
+}

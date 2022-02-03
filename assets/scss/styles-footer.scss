@@ -1,0 +1,211 @@
+.footer {
+    background-color: black;
+    padding: 50px 0 50px 0;
+
+    @media screen and (max-width: 580px) {
+        padding-bottom: 20px;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-bottom: 1px solid grey;
+        padding-bottom: 50px;
+        text-shadow: rgb(10 189 240 / 30%) 3px 3px 0px, rgb(254 1 1 / 30%) -3px -3px 0px;
+        letter-spacing: 8px;
+    }
+
+    &__h2 {
+        font-size: 22px;
+        font-weight: 400;
+
+        @media screen and (max-width: 539px) {
+            text-align: center;
+        }
+    }
+
+    &__noticia {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__form {
+        position: relative;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+        padding: 0 30px;
+
+        @media screen and (max-width: 315px) {
+            border: none;
+            padding: 0;
+        }
+    }
+
+    &__noticia__form {
+        //background: linear-gradient(to bottom, black 12%, grey 12% 100%);
+        background-color: rgb(75, 75, 75);
+        padding: 0 20px 20px 20px;
+        max-width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    &__label {
+        padding-top: 10px;
+        color: white;
+    }
+
+    &__input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 5px;
+
+        &::placeholder {
+            text-align: center;
+        }
+    }
+
+    &__redes {
+        display: block;
+
+        @media screen and (max-width: 580px) {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    &__redes-sociais {
+        position: relative;
+    }
+
+    &__icones {
+        bottom: -30px;
+        left: 75px;
+
+        @media screen and (max-width: 767px) {
+            position: absolute;
+            left: -65px;
+        }
+
+        @media screen and (max-width: 710px) {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            left: 0px;
+            bottom: 20px;
+            margin-bottom: 5px;
+        }
+
+        @media screen and (max-width: 580px) {
+            position: initial;
+            width: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 20px;
+        }
+    }
+
+    &__icones-img {
+        width: 30px;
+        height: 30px;
+        margin-right: 24px;
+
+        @media screen and (max-width: 767px) {
+            margin-right: 5px;
+        }
+
+        @media screen and (max-width: 710px) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__botao {
+        width: 100%;
+        border-color: white;
+    }
+
+    &__copyright {
+        position: relative;
+        color: white;
+    }
+
+    &__copyright-texto {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+
+        @media screen and (max-width: 991px) {
+            right: -30px;
+        }
+
+        @media screen and (max-width: 767px) {
+            position: initial;
+        }
+    }
+
+    &__copyright-h3 {
+        font-size: 18px;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__copyright-git {
+        position: absolute;
+        display: none;
+        text-align: center;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            bottom: -35px;
+            right: -35px;
+        }
+
+        @media screen and (max-width: 710px) {
+            bottom: 40px;
+            right: -15px;
+        }
+
+        @media screen and (max-width: 580px) {
+            position: initial;
+            align-items: center;
+            margin-top: 20px;
+        }
+    }
+
+    &__copyright-nome {
+        font-size: 15px;
+    }
+
+    &__copyright-h3 a {
+        text-decoration: none !important;
+        color: grey !important;
+
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+
+.btn-dark {
+    border-color: white !important;
+}
+
+// .teste {
+//     //colocar dentro de um span
+//     width: 95px;
+//     height: 35px;
+//     background-color: white;
+//     position: absolute;
+//     top: -10px;
+//     left: 37%;
+//     transform: rotate(-10deg);
+// }
