@@ -34,6 +34,11 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.main__post:hover {
+  box-shadow: 3px 3px 20px rgba(128, 0, 128, 0.4);
 }
 .main__post:not(:last-child) {
   margin-bottom: 30px;
@@ -45,6 +50,8 @@ body {
 }
 .main__img {
   width: 90%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 @media screen and (max-width: 876px) {
   .main__img {
