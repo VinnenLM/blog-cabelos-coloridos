@@ -20,7 +20,8 @@
     height: 4px;
     background-color: black;
     transition-property: background-color, transform;
-    transition-duration: 300ms; }
+    transition-duration: 300ms;
+    border-radius: 7px; }
     .nav__menu__icon:before, .nav__menu__icon:after {
       content: "";
       display: block;
@@ -29,7 +30,8 @@
       position: absolute;
       background: black;
       transition-property: margin, transform;
-      transition-duration: 300ms; }
+      transition-duration: 300ms;
+      border-radius: 7px; }
     .nav__menu__icon:before {
       margin-top: -8px; }
     .nav__menu__icon:after {

@@ -36,6 +36,7 @@ $ease: ease-in-out;
             background-color: $nav-color;
             transition-property: background-color, transform;
             transition-duration: $duration;
+            border-radius: 7px;
 
             &:before,
             &:after {
@@ -47,6 +48,7 @@ $ease: ease-in-out;
                 background: $nav-color;
                 transition-property: margin, transform;
                 transition-duration: $duration;
+                border-radius: 7px;
             }
 
             &:before {
