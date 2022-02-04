@@ -38,7 +38,8 @@
     .header__menu__lista__links a {
       color: rgba(128, 128, 128, 0.609);
       transition: 0.7s;
-      text-decoration: none !important; }
+      text-decoration: none !important;
+      vertical-align: middle; }
       .header__menu__lista__links a:hover {
         color: black !important; }
   @media screen and (max-width: 575px) {
