@@ -50,9 +50,6 @@
   transition: 0.7s;
   text-decoration: none !important;
 }
-.header__menu__lista__links a:only-child(:last-child) {
-  vertical-align: middle;
-}
 .header__menu__lista__links a:hover {
   color: black !important;
 }
@@ -108,6 +105,10 @@
 .nav-ativo {
   position: relative;
   transition: 0.2s;
+}
+
+.login {
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=styles-header.css.map */

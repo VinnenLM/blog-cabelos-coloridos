@@ -50,10 +50,6 @@
                 transition: 0.7s;
                 text-decoration: none !important;
 
-                &:only-child(:last-child) {
-                    vertical-align: middle;
-                }
-
                 &:hover {
                     color: black !important;
                 }
@@ -122,4 +118,8 @@
     position: relative;
     transition: 0.2s;
     //padding: 1px 0;
+}
+
+.login {
+    vertical-align: middle;
 }
