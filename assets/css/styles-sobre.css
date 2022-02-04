@@ -104,7 +104,7 @@ body {
 }
 .main__formulario-input input {
   border-radius: 10px;
-  padding: 2px 10px;
+  padding: 2px 12px;
 }
 @media screen and (max-width: 1200px) {
   .main__formulario-input input {
