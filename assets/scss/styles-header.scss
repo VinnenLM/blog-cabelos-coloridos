@@ -95,10 +95,11 @@
         background-position: center;
         background-image: url(../img/banner.webp);
         background-repeat: no-repeat;
+        background-position-x: 55%;
 
         @media screen and (max-width: 575px) {
-            background-position: top;
-            margin-top: 40px;
+            margin-top: 45px;
+            background-size: cover;
         }
     }
 }
