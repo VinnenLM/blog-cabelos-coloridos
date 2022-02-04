@@ -1,0 +1,42 @@
+.paginacao-container {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginacao {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__botao {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid grey;
+        padding-left: 5px;
+        cursor: pointer;
+
+        &:disabled {
+            border: 1px solid #c2c2c2;
+            cursor: unset;
+        }
+
+        & i {
+            color: grey;
+        }
+    }
+
+    &__paragrafo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: black;
+        margin: 0;
+    }
+}
