@@ -89,6 +89,11 @@ body {
     margin: 20px auto;
     justify-content: center;
     align-items: center; }
+    .main__button a {
+      text-decoration: none !important;
+      color: white; }
+      .main__button a:hover {
+        color: black !important; }
   .main__carousel {
     display: flex;
     justify-content: center;
@@ -97,12 +102,15 @@ body {
     @media screen and (max-width: 650px) {
       .main__carousel {
         margin-bottom: 40px; } }
+  .main .carousel {
+    box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.6);
+    border-radius: 20px; }
   .main__email {
     position: relative; }
   .main__icone {
     position: absolute;
     left: 850px;
-    bottom: 200px; }
+    bottom: 150px; }
     @media screen and (max-width: 1199px) {
       .main__icone {
         left: 750px; } }

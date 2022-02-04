@@ -18,11 +18,20 @@ body {
     width: 100%;
 
     &__opiniao {
-        display: flex;
+        display: grid;
         align-items: center;
         font-family: "Playfair Display", serif;
         font-weight: 600;
         padding: 20px 0;
+        grid-template-columns: repeat(auto-fill, 50%);
+        justify-content: space-evenly;
+        grid-gap: 20px 0;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(auto-fill, 100%);
+            justify-content: space-evenly;
+            grid-gap: 20px 0;
+        }
     }
 
     &__imagem {
@@ -34,20 +43,31 @@ body {
         border-radius: 20%;
         width: 300px;
 
-        @media screen and (max-width: 767px) {
-            width: 215px;
+        @media screen and (max-width: 768px) {
+            width: 300px;
         }
 
-        @media screen and (max-width: 575px) {
-            width: 60%;
-            padding-bottom: 20px;
+        @media screen and (max-width: 420px) {
+            width: 200px;
+        }
+
+        @media screen and (max-width: 300px) {
+            width: 150px;
         }
     }
 
     &__contato {
         background-color: rgba(255, 255, 255, 0.4);
-        padding: 20px;
-        border-radius: 5px;
+        padding: 20px 10px 20px 30px;
+        border-radius: 10px;
+
+        @media screen and (max-width: 992px) {
+            padding: 20px 20px 20px 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-top: 20px;
+        }
     }
 
     &__contato h3 {
@@ -55,81 +75,65 @@ body {
         letter-spacing: 1.5px;
     }
 
-    &__opiniao-queremos-saber {
-        padding-left: 40px;
-
-        @media screen and (max-width: 1199px) {
-            padding-left: 20px;
-        }
-
-        @media screen and (max-width: 767px) {
-            padding-left: 0;
-        }
-    }
-
     &__formulario-input {
         margin-top: 10px;
         display: inline-block;
         width: 255px;
-        padding-left: 40px;
 
         &:last-child {
             margin-top: 20px;
         }
 
-        @media screen and (max-width: 1199px) {
+        @media screen and (max-width: 1200px) {
             width: 210px;
-            padding-left: 20px;
         }
 
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 992px) {
             width: 315px;
             display: flex;
             justify-content: space-between;
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 768px) {
             flex-direction: column;
             width: 100%;
-            padding-left: 0;
         }
     }
 
     &__formulario-input input {
-        border-radius: 5px;
+        border-radius: 10px;
         padding: 2px 10px;
+
+        @media screen and (max-width: 1200px) {
+            width: 190px;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     &__avaliacao {
         padding-top: 20px;
-        padding-left: 40px;
-
-        @media screen and (max-width: 1199px) {
-            padding-left: 20px;
-        }
-
-        @media screen and (max-width: 767px) {
-            padding-left: 0;
-        }
     }
 
     &__textarea {
-        width: 450px;
+        width: 470px;
         resize: none;
         height: 70px;
-        border-radius: 5px;
+        border-radius: 10px;
         font-weight: 400;
         padding: 2px 10px;
 
-        @media screen and (max-width: 1199px) {
+        @media screen and (max-width: 1200px) {
             width: 405px;
         }
 
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 992px) {
             width: 405px;
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 768px) {
             width: 100%;
         }
     }
@@ -164,7 +168,7 @@ body {
     }
 
     &__quem-somos__pandora {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 768px) {
             padding-top: 20px;
         }
     }
@@ -188,23 +192,23 @@ body {
     justify-content: center;
     margin-top: 20px;
 
-    &__enviar{
+    &__enviar {
         cursor: pointer;
         background-color: white;
         color: black;
         border: 1px solid black;
-        border-radius: 5px;
-        transition: .5s;
+        border-radius: 10px;
+        transition: 0.5s;
         padding: 10px 30px;
-        &:hover{
+        &:hover {
             color: white;
-            background-color: rgba(0,0,0,.7);
+            background-color: rgba(0, 0, 0, 0.7);
         }
     }
 }
 
 .container {
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 577px) {
         width: 80% !important;
     }
 }
