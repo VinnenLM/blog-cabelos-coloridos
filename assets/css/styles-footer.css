@@ -185,8 +185,15 @@
     margin-top: 20px;
   }
 }
+.footer__copyright-git a {
+  text-decoration: none !important;
+}
 .footer__copyright-nome {
   font-size: 15px;
+  color: white !important;
+}
+.footer__copyright-nome:hover {
+  color: grey !important;
 }
 .footer__copyright-h3 a {
   text-decoration: none !important;
