@@ -21,3 +21,12 @@ function PropriedadesNavBarMobileVisivel() {
 //     e.preventDefault();
 //     $('#barra-pesquisa').toggleClass('barra-pesquisa');
 // });
+
+// $(document).ready(function () { --utilizar para display reduzido de frase
+//     $(".main__description").each(function () {
+//         let texto = $(this);
+//         if (texto.text().length > 20) {
+//             texto.text(texto.text().slice(0, 160) + '...');
+//         }
+//     });
+// });
